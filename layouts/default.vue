@@ -14,7 +14,7 @@ export default {
     Navigation
   }
 }
-</script>
+</script> 
 
 <style>
 html {

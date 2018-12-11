@@ -37,7 +37,7 @@ export default {
       .get('https://api.github.com/users/jrchapprogrammer/repos?type=owner')
       .then(res => {
         return {
-          repos: res.data
+          repos: res.data.filter(val => val.description.includes('John'))
         }
       })
   }

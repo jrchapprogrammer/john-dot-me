@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div class="box">
     <li>
       <a :href="repo.html_url" target="_blank">
         <h2 class="isLarge">{{ repo.name }}</h2>
       </a>
-      <p>{{ repo.created_at }}</p>
-      <p>{{ repo.description }}</p>
+      <!-- <span>{{ repo.created_at }}</span> -->
+      <span>{{ repo.description }}</span>
     </li>
   </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <section class="section is-large">
+  <section class="section is-large philly hero is-fullheight-with-navbar">
     <div class="container has-text-centered">
       <h1 class="title">Hi, I'm John Chappelle</h1>
       <h2 class="subtitle">a Freelance Web Developer based in Philadelphia, PA.</h2>
@@ -18,6 +18,10 @@ export default {
 </script>
 
 <style>
+.philly {
+  background-image: url('https://res.cloudinary.com/dn0k1nlvu/image/upload/c_scale,w_1703/v1544480200/master-wen-670290-unsplash_vtda1u.jpg');
+  background-size: cover;
+}
 /* .container {
   min-height: 100vh;
   display: flex;

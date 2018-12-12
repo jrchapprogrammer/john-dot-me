@@ -3,7 +3,7 @@
     <div class="container has-text-centered">
       <h1 class="title">My Projects</h1>
       <ul>
-        <GitRepo v-for="repo in repos" :key="repo.id" :repo="repo"/>
+        <GitRepo v-for="repo in $store.state.repos" :key="repo.id" :repo="repo"/>
       </ul>
       <p>
         To view these repos in their entirety, visit my
@@ -24,20 +24,23 @@ export default {
   components: {
     GitRepo
   },
-  data() {
-    return {
-      repos: '',
-      filteredRepos: ''
-    }
-  },
-  asyncData({ params }) {
-    return axios
-      .get('https://api.github.com/users/jrchapprogrammer/repos?type=owner')
-      .then(res => {
-        return {
-          repos: res.data /* .filter(val => val.description.includes('John')) */
-        }
-      })
+  // data() {
+  //   return {
+  //     repos: '',
+  //     filteredRepos: ''
+  //   }
+  // },
+  // asyncData({ params }) {
+  //   return axios
+  //     .get('https://api.github.com/users/jrchapprogrammer/repos?type=owner')
+  //     .then(res => {
+  //       return {
+  //         repos: res.data /* .filter(val => val.description.includes('John')) */
+  //       }
+  //     })
+  // }
+  async mounted() {
+    store.dispatch('nuxtServerInit')
   }
 }
 </script>

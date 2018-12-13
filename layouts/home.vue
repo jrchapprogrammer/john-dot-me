@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="philly hero is-fullheight-with-navbar">
     <Navigation/>
     <nuxt/>
   </div>
@@ -17,6 +17,10 @@ export default {
 </script> 
 
 <style>
+.philly {
+  background-image: url('https://res.cloudinary.com/dn0k1nlvu/image/upload/c_scale,w_1703/v1544480200/master-wen-670290-unsplash_vtda1u.jpg');
+  background-size: cover;
+}
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -64,7 +68,4 @@ html {
   color: #fff;
   background-color: #35495e;
 }
-/* body {
-  background-color: azure;
-} */
 </style>

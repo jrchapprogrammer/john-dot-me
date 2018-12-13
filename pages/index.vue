@@ -1,5 +1,5 @@
 <template>
-  <section class="section is-large philly hero is-fullheight-with-navbar">
+  <section class="section is-large<!-- philly hero is-fullheight-with-navbar -->">
     <div class="container has-text-centered">
       <h1 class="title">Hi, I'm John Chappelle</h1>
       <h2 class="subtitle">a Freelance Web Developer based in Philadelphia, PA.</h2>
@@ -11,6 +11,7 @@
 // import Logo from '~/components/Logo.vue'
 
 export default {
+  layout: 'home'
   // components: {
   //   Logo
   // }
